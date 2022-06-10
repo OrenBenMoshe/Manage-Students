@@ -1,0 +1,102 @@
+body {
+  background-color: antiquewhite;
+  text-align: center;
+}
+
+label{
+  font-size: 1.3rem;
+  margin-left: 20px;
+  pointer-events: none;
+}
+
+hr{
+  border-style:none;
+  border-top-style: dotted;
+  border-color: #84a9ac;
+  border-width: 8px;
+  width: 100%;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.delete:hover {
+  background-color: white !important;
+  color: red !important;
+}
+
+#delete-checkbox{
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+}
+
+.student-list{
+  width: 30% !important;
+  margin-top: 90px !important;
+  margin-right: 50px;
+  margin-bottom: 200px;
+}
+
+.student-id{
+  border: 1px solid black;
+}
+
+.student-name{
+  border: 1px solid black;
+  text-align: center !important;
+}
+
+.student-title{
+  text-align: center !important;
+  border: 1px solid black;
+  margin: 0 auto !important;
+}
+
+h2{
+  position: absolute;
+  top: 140px;
+  right: 220px;
+}
+
+.student-container{
+  margin-left: 50px !important;
+  margin-top: 50px !important;
+  height: 600px;
+}
+
+.header{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin-top: 50px;
+  margin-bottom: 200px;
+}
+
+.controller{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  width: 500px;
+  position: absolute;
+  top: 800px;
+  left: 200px;
+}
+
+.current-students{
+  width: 500px;
+  display: flex;
+}
+
+.student-data{
+  text-align: center !important;
+  /* background-color: blueviolet; */
+  width: 600px !important;
+  margin: 50px auto !important;
+}
+
+.current-student-title{
+  align-items: center;
+  font-size: 1.7rem;
+  font-weight: bold;
+  border: 3px solid black;
+}
