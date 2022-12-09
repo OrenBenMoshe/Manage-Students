@@ -29,9 +29,6 @@ const StudentPage = () => {
     const currStudent = tempList.find((x) => x.id === id);
     if(currStudent) setChosenStudent(currStudent);
   },[id])
-
-  console.log(id);
-  console.log(chosenStudent);
   
   return (
       <div className="container">

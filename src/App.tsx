@@ -17,10 +17,10 @@ const App: React.FC = () => {
   
   useEffect(() => {
     const temp = JSON.parse(localStorage.getItem(ITEMS_KEY) as string);
-    if(temp === null){
-    fetchItems();
+    if(!temp){
+      fetchItems();
     }
-    if(temp !== null){
+    if(temp){
       localStorageSet();
     }
   }, []);
@@ -64,16 +64,13 @@ const App: React.FC = () => {
 
 
    function updateDeleteStatus(name:string){
-    console.log(name);
     if(selectedList.find(x => x === name)){
-      console.log("you unchecked this item so we delete it from the list");
       const index = selectedList.findIndex(x => x === name);
       selectedList.splice(index, 1);
       setSelectedList(prevItems => [...prevItems])
     }else{
       setSelectedList(prevItems => [...prevItems, name])
     }
-    console.log("selectedList: ", selectedList);  
   }
   
   function deleteSelectedElements(){
@@ -82,7 +79,6 @@ const App: React.FC = () => {
       items.splice(index,1);  
       return null;
     })
-    console.log(items);
     localStorage.setItem(NEW_LIST_KEY, JSON.stringify(items));
     window.location.reload();
   }

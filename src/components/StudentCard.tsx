@@ -39,12 +39,12 @@ const StudentCard = (props: CardProps) => {
             <Typography gutterBottom> {school}</Typography>
             <Typography gutterBottom> {city}</Typography>
             <hr/>
-            <div className="delete-section">
+          </CardContent>
+          </CardActionArea>
+          <div className="delete-section">
               <input type="checkbox" id="delete-checkbox" name="delete" onChange={()=>updateDeleteStatus(name)}/>
               <label htmlFor='delete-checkbox'>delete</label>
             </div>
-          </CardContent>
-          </CardActionArea>
         </Card>
     </Grid>
   )

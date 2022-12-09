@@ -24,6 +24,10 @@ hr{
   color: red !important;
 }
 
+.delete-section > label{
+  font-size: 1.5rem;
+}
+
 #delete-checkbox{
   width: 20px;
   height: 20px;
